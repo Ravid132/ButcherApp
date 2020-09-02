@@ -1,4 +1,4 @@
-# ButcherApp
+# ButcherApp with Firebase
 
 Registeration:
 <br>
