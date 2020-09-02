@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity"
+    android:background="@color/Dark4">
+
+    <ImageView
+        android:id="@+id/new_product_image_add"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_image"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/new_product_name_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_product_image_add"
+        android:inputType="textMultiLine"
+        android:hint="New product Name"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"/>
+    <EditText
+        android:id="@+id/new_product_price_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_product_name_add"
+        android:inputType="textMultiLine"
+        android:hint="New product price"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"/>
+    <EditText
+        android:id="@+id/new_product_quantity_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_product_price_add"
+        android:inputType="number"
+        android:hint="New product quantity"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"/>
+
+    <EditText
+        android:id="@+id/new_product_desc_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_product_quantity_add"
+        android:inputType="textMultiLine"
+        android:hint="New product description"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="50dp"/>
+
+    <Button
+        android:id="@+id/new_product_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/new_product_desc_add"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:background="@color/Dark2"
+        />
+
+
+
+</RelativeLayout>

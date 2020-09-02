@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="15dp"
+    android:background="@color/Dark2"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Dark2"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:id="@+id/cart_item_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="name:"
+            />
+        <TextView
+            android:id="@+id/cart_item_quantity"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="quantity:"
+            android:textColor="@color/white"
+            android:layout_below="@id/cart_item_name"
+            />
+        <TextView
+            android:id="@+id/cart_item_price"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="price:"
+            android:layout_below="@id/cart_item_quantity"
+            />
+        <TextView
+            android:id="@+id/cart_total_price"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Total price:"
+            android:layout_below="@id/cart_item_price"
+            />
+
+
+        <ImageView
+            android:id="@+id/ProductImage2"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:scaleType="fitStart"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

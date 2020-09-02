@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:backgroundTint="@color/Dark2">
+
+        <TextView
+            android:id="@+id/order_User_name"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="name:"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/order_User_Phone"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="quantity:"
+            android:textColor="@color/white"
+            android:layout_below="@id/order_User_name"
+            />
+        <TextView
+            android:id="@+id/order_User_price"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="price:"
+            android:layout_below="@id/order_User_Phone"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/order_Details_Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_below="@id/order_User_price"
+            android:text="view order details"
+            android:textStyle="bold"
+            android:background="@color/Dark4"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

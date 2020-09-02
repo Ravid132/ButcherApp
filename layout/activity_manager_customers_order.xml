@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerCustomersOrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_Manager_Customers_Orders"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/Dark2">
+        <TextView
+            android:id="@+id/orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Order Details"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/Dark2"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"/>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/customers_Orders_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/Dark2"
+        android:layout_below="@+id/relative_Manager_Customers_Orders"
+        />
+</RelativeLayout>
